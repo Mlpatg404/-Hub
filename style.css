@@ -1,0 +1,229 @@
+
+:root {
+  --bg: linear-gradient(135deg, #f4f4f4 60%, #e0eaff 100%);
+  --text: #222;
+  --accent: #ff6f61;
+  --accent2: #007bff;
+  --header: #fff;
+  --footer: #eee;
+  --btn-bg: linear-gradient(90deg, #ff6f61 0%, #007bff 100%);
+  --btn-text: #fff;
+  --btn-hover: #ffb347;
+  --btn-shadow: 0 4px 16px #007bff33;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: var(--header);
+  box-shadow: 0 2px 8px #0001;
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: var(--accent2);
+  text-shadow: 0 2px 8px #ff6f6133;
+}
+nav a {
+  color: var(--accent);
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 2rem;
+}
+.main-btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  box-shadow: var(--btn-shadow);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 260px;
+  text-align: center;
+}
+.main-btn:hover {
+  background: linear-gradient(90deg, var(--btn-hover) 0%, #007bff 100%);
+  transform: scale(1.07);
+  box-shadow: 0 8px 24px #ff6f6133;
+}
+.github-link {
+  margin-top: 2rem;
+  color: var(--accent2);
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.github-link:hover {
+  color: var(--btn-hover);
+  text-decoration: underline;
+}
+footer {
+  background: var(--footer);
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1rem;
+  margin-top: auto;
+  color: var(--accent2);
+  letter-spacing: 1px;
+}
+/* Темна тема */
+body.dark {
+  --bg: linear-gradient(135deg, #181a1b 60%, #23272a 100%);
+  --text: #f4f4f4;
+  --accent: #66aaff;
+  --accent2: #ffb347;
+  --header: #23272a;
+  --footer: #23272a;
+  --btn-bg: linear-gradient(90deg, #23272a 0%, #66aaff 100%);
+  --btn-text: #f4f4f4;
+  --btn-hover: #ff6f61;
+  --btn-shadow: 0 4px 16px #66aaff33;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff6f61;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.delete-btn:hover {
+  color: #c00;
+}
+#notes-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #007bff22;
+  font-size: 1.1rem;
+  width: 350px;
+  max-width: 90vw;
+}
+body.dark #notes-list li {
+  background: #23272a;
+  box-shadow: 0 2px 8px #66aaff22;
+}
+.note-animate {
+  animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.main-btn {
+  background: linear-gradient(90deg, #ffb347 0%, #ff6f61 100%);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 1.1rem 2.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px #ff6f6133;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+.main-btn:hover {
+  background: linear-gradient(90deg, #ff6f61 0%, #007bff 100%);
+  transform: scale(1.07);
+  box-shadow: 0 8px 24px #007bff33;
+}
+form button.main-btn:hover,
+#theme-toggle.main-btn:hover,
+#music-toggle.main-btn:hover {
+  background: linear-gradient(90deg, #ff6f61 0%, #007bff 100%);
+  transform: scale(1.06);
+  box-shadow: 0 8px 24px #007bff33;
+}}
+
+.delete-btn {
+  background: linear-gradient(90deg, #ff6f61 0%, #ffb347 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #ff6f6133;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-btn:hover {
+  background: linear-gradient(90deg, #ffb347 0%, #ff6f61 100%);
+  transform: scale(1.15) rotate(12deg);
+}
+.github-link {
+  margin-top: 1.5rem;
+  color: #222;
+  background: #fff;
+  border-radius: 40px;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #007bff22;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.github-link:hover {
+  background: #ffb347;
+  color: #fff;
+  box-shadow: 0 8px 24px #ffb34733;
+  text-decoration: underline;
+}
+footer {
+  background: rgba(255,255,255,0.85);
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1rem;
+  margin-top: auto;
+  color: #ff6f61;
+  letter-spacing: 1px;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -2px 16px #ffb34733;
+}
+@media (max-width: 600px) {
+  .menu-card {
+    padding: 2rem 1rem;
+    max-width: 95vw;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

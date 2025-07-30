@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій сайт</title>
+    <title>Мій сучасний сайт</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div class="bg-gradient"></div>
     <header>
-        <h1>Ласкаво просимо на мій сайт!</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="notes.html">Нотатки</a></li>
-                <li><a href="settings.html">Налаштування</a></li>
-            </ul>
-        </nav>
+        <h1><i class="fa-solid fa-lightbulb"></i> Мій сучасний сайт</h1>
     </header>
     <main>
-        <section>
-            <h2>Про сайт</h2>
-            <p>Це стартова сторінка вашого персонального сайту.</p>
+        <section class="menu-card">
+            <button class="main-btn" onclick="location.href='notes.html'">
+                <i class="fa-solid fa-note-sticky"></i> Замітки
+            </button>
+            <button class="main-btn" onclick="location.href='settings.html'">
+                <i class="fa-solid fa-gear"></i> Налаштування
+            </button>
+            <a class="github-link" href="https://github.com/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Мій сайт</p>
+        <p>&copy; 2025 Мій сучасний сайт</p>
     </footer>
     <script src="../script.js"></script>
 </body>
