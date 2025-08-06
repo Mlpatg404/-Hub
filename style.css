@@ -37,6 +37,12 @@ header h1 {
 }
 nav a {
   color: var(--accent);
+  text-decoration-line: none;
+  border-radius: 10px;
+  border: 2px solid orange;
+  padding: 5px;
+  background-color: #fafafa;
+
 }
 .centered {
   display: flex;
@@ -239,3 +245,5 @@ padding-right:30px;
 padding-left:30px;
 
 }
+
+
