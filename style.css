@@ -227,3 +227,15 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+.notes-ip{
+
+
+width: 100%;
+border-radius: 10px;
+height: 50px;
+border:1px solid black;
+padding-right:30px;
+padding-left:30px;
+
+}
