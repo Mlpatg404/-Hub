@@ -249,5 +249,5 @@ padding-left:30px;
 body.dark footer {
   background: #23272a;
   color: var(--accent2);
-  box-shadow: 0 -2px 16px #66aaff33;
+  box-shadow: 0 -2px 16px #66aaff32;
 }
