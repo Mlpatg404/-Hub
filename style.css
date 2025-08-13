@@ -159,6 +159,8 @@ body.dark #notes-list li {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+
+}
 .main-btn:hover {
   background: linear-gradient(90deg, #ff6f61 0%, #007bff 100%);
   transform: scale(1.07);
@@ -170,7 +172,7 @@ form button.main-btn:hover,
   background: linear-gradient(90deg, #ff6f61 0%, #007bff 100%);
   transform: scale(1.06);
   box-shadow: 0 8px 24px #007bff33;
-}}
+}
 
 .delete-btn {
   background: linear-gradient(90deg, #ff6f61 0%, #ffb347 100%);
